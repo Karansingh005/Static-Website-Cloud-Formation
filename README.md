@@ -12,10 +12,14 @@ Here are some of the requirements, to run these scripts on your local machine:
 
 ## Running the scripts to create cloudformation stack
 1. Open VS Studio code, and open the repository containing all the file for of scripts.
-2. Run the following command to run the file to create S3 bucket: 
+2. Run the following command to create the stack to create S3 bucket: 
 ```
 $ ./create <stack-name> bucket.yml bucket.json
 ```
-3. Open Cloud Formation in AWS console to check if stack was created successfully.
+3. (Optional) Run the following command to update the cloudformation stack: 
+```
+$ ./create <stack-name> bucket.yml bucket.json
+```
+3. Open Cloud Formation in AWS console to check if stack was created or updated successfully.
 4. Upload [index.html](https://github.com/Karansingh005/Static-Website-Cloud-Formation/blob/master/index.html) to S3 bucket.
  (Alert! Deployments.yml won't work to deploy cloudfront distribution. So, to create cloudfront distribution, use AWS management console.)
