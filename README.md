@@ -18,7 +18,7 @@ $ ./create <stack-name> bucket.yml bucket.json
 ```
 3. (Optional) Run the following command to update the cloudformation stack: 
 ```
-$ ./create <stack-name> bucket.yml bucket.json
+$ ./update <stack-name> bucket.yml bucket.json
 ```
 3. Open Cloud Formation in AWS console to check if stack was created or updated successfully.
 4. Upload [index.html](https://github.com/Karansingh005/Static-Website-Cloud-Formation/blob/master/index.html) to S3 bucket.
